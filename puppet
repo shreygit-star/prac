@@ -1,0 +1,17 @@
+node 'pclient' {
+         package {'tree':
+               ensure => installed,
+}
+#         package {'apache2':
+#               ensure => installed,
+#               ensure => absent,
+#}
+         package {'nginx':
+               ensure => installed,
+
+}
+        # package {'httpd':
+         #       ensure => installed
+}
+
+
