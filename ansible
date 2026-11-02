@@ -1,0 +1,17 @@
+- name: install
+  hosts: servers
+  remote_user: admin
+  become: true
+  tasks:
+    - name: update
+      ansible.builtin.apt:
+        update_cache: true
+#    - name: install
+#      ansible.builtin.apt:
+ #       name: apache2
+  #      state: latest
+    - name: install
+      ansible.builtin.apt:
+        name: nginx
+        state: latest
+
